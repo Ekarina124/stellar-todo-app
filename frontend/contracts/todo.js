@@ -1,11 +1,11 @@
 import { StellarContractsKit, FreighterAdapter } from 'stellar-contracts-kit';
 
-export const CONTRACT_ID = 'CDVMUWZ5Z5523B6G6RHLPREN3J7PL33E4KWRXAAQFUTDGBPRWIQ4DQYJ';
+export const CONTRACT_ID = 'CB3NXYZUHWG7PPTS3PIUPKTCUHBA5Q5TBGIYMHRRPRJNZLIWZRDGRQE3';
 
 const freighter = new FreighterAdapter();
 
 export const kit = new StellarContractsKit({
-  network: 'testnet',
+  network: 'mainnet',
   wallet: freighter,
   adapters: [freighter],
 });
